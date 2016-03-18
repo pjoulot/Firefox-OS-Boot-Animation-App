@@ -1,0 +1,37 @@
+body {
+  background-color: #0F97D5;
+}
+
+#foxAnimation {
+  background: url('../images/foxsprite.png') 0 0 no-repeat;
+  width: 156px;
+  height: 156px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-78px;
+  margin-left:-78px;
+}
+#foxText {
+  color: white;
+  width: 156px;
+  text-align: center;
+  height: 50px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:85px;
+  margin-left:-78px;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+@keyframes animate-firefoxos {  
+    0% {background-position: -6864px 0; }
+    100% {background-position: 0 0;}
+}
+
+#foxAnimation {
+  animation: animate-firefoxos 3.6s steps(44) infinite;
+}
+
